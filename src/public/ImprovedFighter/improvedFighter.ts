@@ -17,7 +17,7 @@ export default class ImprovedFighter extends Fighter{
         }
     }
 
-    private _doubleHit(enemy: Fighter , point: number): void {
+    private _doubleHit(enemy: IFighter , point: number): void {
         super.hit(enemy, point * 2);
     }
 
