@@ -1,5 +1,5 @@
-## ts-bsa-2017
-TypeScript project for BSA-2017
+## ts-bsa-2018
+TypeScript project for BSA-2018
 
 ## Instalation
 npm install<br />
