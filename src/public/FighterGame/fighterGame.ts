@@ -44,18 +44,18 @@ export class FighterGame implements GameInterface{
     this._declareADraw();
   }
 
-  private _generatePoints(){
+  private _generatePoints(): Array<number> {
      return Array.from(
        { length: Math.floor(Math.random() * 50 + 20 ) }, 
        () => Math.floor(Math.random() * 40)
      );
   }
 
-  private _declareALooser(fighter: IFighter){
+  private _declareALooser(fighter: IFighter): void {
     console.log(`%c${fighter.name} is dead!` , "background : red; color: white");
   }
 
-  private _declareADraw(){
+  private _declareADraw(): void {
     console.log('%cThis round ended in a draw' , "background : teal; color: white");
   }
 

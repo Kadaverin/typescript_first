@@ -17,11 +17,11 @@ export default class ImprovedFighter extends Fighter{
         }
     }
 
-    private _doubleHit(enemy: Fighter , point: number){
+    private _doubleHit(enemy: Fighter , point: number): void {
         super.hit(enemy, point * 2);
     }
 
-    private _logAboutCrit(){
+    private _logAboutCrit(): void {
         console.log(`%c${this.name} make crit !!` , ' color: teal; font-weight: bold');
     }
 }
